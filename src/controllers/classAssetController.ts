@@ -91,4 +91,5 @@ export const softDelete = async (req: IRequest, res: Response, next: NextFunctio
     logger.info('ERROR: controller -> delete', error);
     next(new ErrorHandler(error.statusCode, error.message));
   }
+
 };
